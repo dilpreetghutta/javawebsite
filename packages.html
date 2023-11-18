@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="javaimage-removebg-preview.png">
+        <h1>CORE JAVA PROGRAMMING</h1>
+        <img src="javaimage-removebg-preview.png">
+
+    </header>
+
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="#programs">ALL PROGRAMS</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contactpage.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+    </nav>
+
+    <h2> PROGRAMS OF PACKAGES :- </h2> <br>
+    <h3>1.Create a Java program to access the java.util.Date class through import keyword and print the current date of the system.</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>import java.util.Date;
+            class A{
+                public static void main(String a[])
+                {
+                    Date obj = new  Date();
+                    System.out.println(obj); 
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7023_Packages_1.png" height="80" width="430">
+    </div><br>
+
+    <h3>2.Create a Java program to access the java.util.Date class through qualified way and print the current date of the system.</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class packages2_7024 {
+            public static void main(String[] args) {
+                java.util.Date currentDate = new java.util.Date();
+                System.out.println("Current Date: " + currentDate);
+            }
+        }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="package2.png" height="80" width="430">
+    </div><br>
+
+    <h3>3. Create a Java program to access the java.util.Date class through import keyword and print the current date of the system but inherit the Date class.</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>import java.util.Date;
+
+            public class CustomDate {
+                private Date date;
+            
+                public CustomDate() {
+                    date = new Date();
+                }
+            
+                public Date getCurrentDate() {
+                    return date;
+                }
+            
+                public static void main(String[] args) {
+                    CustomDate customDate = new CustomDate();
+                    Date currentDate = customDate.getCurrentDate();
+            
+                    System.out.println("Current Date: " + currentDate);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="packages2_7024.png" height="80" width="430">
+    </div><br>
+
+    <h3>4.Create a Java program to access the java.util.Date class through qualified way and print the current date of the system but inherit the Date class. </h3>
+</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Date {
+            public static void main(String args[]){
+            java.util.Date date=new java.util.Date();  
+            System.out.println(date); 
+            }
+        }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7086Packages4.png" height="80" width="430">
+    </div><br>
+
+    <section id="programs">
+        <h2>JAVA PROGRAMMING CONSISTS OF : </h2>
+    <div class="hyperlink-buttons">
+        <div class="column">
+            <a href="2darray.html">2D ARRAYS </a> <br>
+            <a href="basicprogrammingcontructs.html">BASIC PROGRAMMING CONSTRUCTS</a>
+            <a href="exceptionhandling.html"> EXCEPTION HANDLING</a>
+            <a href="multithreading.html"> MULTITHREADING</a>
+        </div>
+
+        <div class="column">
+            <a href="functions.html">FUNCTIONS</a>
+            <a href="awt.html">GRAPHICAL USER INTERFACE (AWT)</a>
+            <a href="inheritance.html">INHERITANCE</a> <br>
+            <a href="inputoutput.html"> INPUT/OUTPUT</a> <br>
+
+        </div>
+        <div class="column">
+            <a href="oop.html">OBJECT ORIENTED PROGRAMMING</a>
+            <a href="packages.html">PACKAGES</a>
+            <a href="singledimension.html"> SINGLE DIMENSION ARRAYS</a> <br>
+            <a href="strings.html"> STRINGS</a>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <pre align="center">ALL RIGHTS RESERVED @7051_dilpreetsingh</pre>
+        <div class="footer-buttons">
+
+            <a href="index.html">HOME</a>
+            <a href="contactpage.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#top">TOP OF PAGE</a>
+        </div>
+    </footer>
+</body>
+
+</html>

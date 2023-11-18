@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="javaimage-removebg-preview.png">
+        <h1>CORE JAVA PROGRAMMING</h1>
+        <img src="javaimage-removebg-preview.png">
+
+    </header>
+
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="#programs">ALL PROGRAMS</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contactpage.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+    </nav>
+
+    <h2> PROGRAMS OF BASIC PROGRAMMING CONSTRUCTS :- </h2> <br>
+    <h3>1.Write a Java program to print Hello World! on screen</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+                    System.out.println("Hello World");
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc1.png" height="70" width="430">
+    </div><br>
+
+    <h3>2. Write a Java program to print the sum of two numbers</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class p2 {
+            public static void main(String args[]) {
+                int a = 12390;
+                int b = 440;
+                int c = a + b;
+                System.out.println("The Sum og given number is :" + c);
+            }
+        }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc2.png" height="100" width="430">
+    </div><br>
+
+    <h3>3.Write a Java program that takes two numbers and display the product of two numbers</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>{
+            public static void main(String str[])throws java.io.IOException
+            {	
+                System.out.println("Computing the product of two number using BufferedReader Class");
+        
+                java.io.InputStreamReader obj = new java.io.InputStreamReader(System.in);
+                java.io.BufferedReader input = new java.io.BufferedReader(obj);
+                System.out.println("enter a number : ");
+                int a=Integer.parseInt(input.readLine());
+                System.out.println("enter a number : ");
+                int b=Integer.parseInt(input.readLine());
+                System.out.println(a*b);
+                
+                
+                System.out.println("Now we'll compute the product using Scanner Class");
+        
+                java.util.Scanner input1 = new java.util.Scanner(System.in);
+                System.out.println("enter a number : ");		
+                int a1=input1.nextInt();
+        
+                System.out.println("enter a number : ");
+                int b1=input1.nextInt();
+                System.out.println("Product of the two number is : "+ a1*b1);
+                
+                
+                
+            }
+        }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7034bpc3.png" height="100" width="430">
+    </div><br>
+
+    <h3>4.Write a Java program to print the sum, multiply, subtract, divide and remainder of two numbers</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+                    int n1 = 5;
+            
+                    int n2 = 3;
+            
+                    System.out.println("The two number"+n1+" and "+n2
+                        +"\n sum is "+(n2+n1)
+                        +"\n multiply is "+(n2*n1)
+                        +"\n subtract is "+(n2-n1)
+                        +"\n divide is "+(n2/n1)
+                        +"\n remainder is "+(n2%n1)
+                        );
+                    
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc4.png" height="100" width="430">
+    </div><br>
+
+    <h3>5.Write a Java program that takes five numbers as input to calculate and print the average of the numbers</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>import java.util.Scanner;
+
+            class average {
+                public static void main(String[] a) {
+                    Scanner s=new Scanner(System.in);
+                    double sum=0;
+                    System.out.println("Enter Five Numbers: ");
+            
+                    for(int i=0;i<5;i++){
+                        double number = s.nextDouble();
+                        sum+=number;
+                    }
+                    double average=sum/5;
+                    System.out.println("The average of the five numbers is : "+average);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7003BPC_5.png" height="100" width="430">
+    </div><br>
+
+    <h3>6.Write a Java program to swap two variables</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>import java.util.Scanner;
+            class Bpc6{
+                void swap(int f,int s){
+                    System.out.println("After Swapping both variables ");
+                    f=f+s;
+                    s=f-s;
+                    f=f-s;
+                    System.out.println("First Number : "+f);
+                    System.out.println("Second Number : "+s);
+                }
+            }
+            class b{
+                public static void main(String str[]){
+                Bpc6 obj = new Bpc6();
+                Scanner sc=new Scanner(System.in);
+                System.out.println("Enter the first Number : ");
+                int f=sc.nextInt();
+                System.out.println("Enter the Second Number : ");
+               int s=sc.nextInt(); 
+               obj.swap(f,s);
+            
+            }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7074bpc6.png" height="100" width="430">
+    </div><br>
+
+    <h3>7.Write a Java program to convert a decimal number to binary numbers</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.Scanner;
+            class decimaltobinary
+           {
+              
+               public static void main(String[] args) {
+                
+                   int rem,num;
+                   String binaryNumber = "";
+                   
+                   Scanner input = new Scanner(System.in);
+                 
+                   System.out.print("Enter a Decimal Number : ");
+                  
+                   num = input.nextInt();
+                 
+                   while(num > 0){
+                   
+                     rem = num % 2;
+                     
+                     binaryNumber = rem + "" + binaryNumber;
+                     
+                     num =num / 2;
+                   }
+                   
+                   System.out.println("Binary Number : "+binaryNumber);
+               }
+           }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7020BPC_7.png" height="100" width="430">
+    </div><br>
+
+    <h3>8. Write a Java program to convert a binary number to decimal number</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+                    String binary = "1010011";  // binary number
+            
+                    // in-build function Integer wrapper class  binary to decmial return integer
+            
+                    int decimal = Integer.parseInt(binary, 2);
+            
+                    System.out.println(binary+" binary to decmial is "+decimal); // convert to decmial
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc8.png" height="100" width="430">
+    </div><br>
+
+    <h3>9.Write a Java program to check whether Java is installed on your computer or not</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Test
+            {
+                public static void main(String args[])
+                {
+                    System.out.println("{ Java is Installed }");    // if not installed fail to execute
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc9.png" height="100" width="430">
+    </div><br>
+
+    <h3>10.Write a Java program and compute the sum of the digits of an integer</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Test
+            {
+                public static void main(String args[])
+                {
+                    int n = 0;
+            
+                    int num = 123;  // take number
+            
+                    /* if divide any number by 10 return reminder equal to last digit  */
+            
+                    /* if divide any number by 10 that last digit is zero so zero element */ 
+            
+                    while (num != 0)
+                    {
+                        n += num % 10;   // add the last digit to the n
+                        num /= 10;      // movet to the next digit
+                    }
+            
+                    System.out.println(num+" sum of digit is "+n);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc10.png" height="100" width="430">
+    </div><br>
+
+    <h3>11. Write a Java program to compare two numbers</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.Scanner;
+
+
+            class Comparetwonumbers
+            {
+                void CheckEqual(){
+                    int num1, num2;
+                    System.out.println("Program to compare two numbers");
+                    Scanner scan = new Scanner(System.in);
+                    System.out.print("Enter first number : ");
+                    num1 = scan.nextInt();
+                    System.out.print("Enter second number : ");
+                    num2 = scan.nextInt();
+                    if(num1 == num2){
+                        System.out.println("Both numbers are equal");
+                    }
+                    else{
+                        System.out.println("Numbers are not equal");
+                    }
+                }
+                public static void main(String args[]){
+                    Comparetwonumbers obj = new  Comparetwonumbers();
+                    obj.CheckEqual();
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7020BPC_11.png" height="100" width="430">
+    </div><br>
+
+    <h3>12.Write a Java program to count the letters, spaces, numbers and other characters of an input string</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+                    String line = "rtx (500) is ready";
+            
+                    int string_letter = 0;
+                    int string_space = 0;
+                    int string_symbol = 0;
+            
+                    /* compare is equal | greater | less */
+            
+                    for (char c : line.toCharArray())
+                    {
+                        if  (Character.isWhitespace(c))
+                            string_space ++;
+                        if (Character.isLetter(c))
+                            string_letter ++;
+                        else
+                            string_symbol ++;
+                    }
+            
+                    System.out.println("string "+line.length()+" length "+string_letter+" letter "+string_symbol+" symbol "+string_space+" space");
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc12.png" height="100" width="430">
+    </div><br>
+
+    <h3>13. Write a Java program to print the ascii value of a given character</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>import java.util.Scanner;  
+            class AsciiValue  
+           {  
+           public static void main(String args[])  
+           {  
+           System.out.print("Enter a character: ");  
+           Scanner sc = new Scanner(System.in);  
+           char chr = sc.next().charAt(0);  
+           int asciiValue = chr;  
+           System.out.println("ASCII value of " +chr+ " is: "+asciiValue);  
+           }  
+           }  </pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7020BPC_13.png" height="100" width="430">
+    </div><br>
+
+    <h3>14.Write a Java program to display the system time</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.Scanner;
+            class electricBill{
+                void CalcBill(){
+                    System.out.println("Program to calculate Electricity Bill");
+                    Scanner scan = new Scanner(System.in);
+                    double rate, unit, total;
+                    System.out.print("Enter the rate per unit (in rupees) : ");
+                    rate = scan.nextInt();
+                    System.out.print("Enter the number of units consumed : ");
+                    unit = scan.nextInt();
+                    total = rate * unit;
+                    System.out.println("Total Electricity Bill is : " + total);
+                }
+                public static void main(String args[]){
+                    electricBill obj = new electricBill();
+                    obj.CalcBill();
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7059bpc15.png" height="100" width="430">
+    </div><br>
+
+    <h3>15.Write a Java program to print the odd numbers from 1 to 20</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Test
+            {
+                public static void main(String args[])
+                {
+                    for (int i = 1; i < 20; i += 2)
+                        System.out.print(i);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc16.png" height="100" width="430">
+    </div><br>
+
+    <h3>16.Write a Java program to print the even numbers from 1 to 20</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Test
+            {
+                public static void main(String args[])
+                {
+                    for (int i = 0; i < 20; i += 2)
+                        System.out.print(i);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc17.png" height="100" width="430">
+    </div><br>
+
+    <h3>17.Write a Java program to convert a string to an integer</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Test
+            {
+                public static void main(String args[])
+                {
+                    System.out.println(Integer.parseInt("10")+2);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc18.png" height="100" width="430">
+    </div><br>
+
+    <h3>18.Write a Java program to convert seconds to hour, minute and seconds</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+                    int seconds = 240000;
+            
+                    System.out.println("seconds "+seconds+" minutes"+(seconds / 60)+"hours"+((seconds / 60) / 60));
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc19.png" height="100" width="430">
+    </div><br>
+
+    <h3>19.Write a Java program to compute the sum of the first 100 prime numbers</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+            
+                    int num = 541;    /* 100th prime number is 541 */
+            
+                    int sum = 0;
+            
+                    for (int n = 2; n < num; n++)
+                    {
+                        boolean isPrime = true;
+                        
+                        for (int i = 2; i < n; i++) if (n%i == 0) isPrime = false;
+            
+                        if (isPrime) sum += n;
+                    }
+                    System.out.println("sum of 100 prime number is "+sum);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc20.png" height="100" width="430">
+    </div><br>
+
+    <h3>20.Write a Java program to swap the first and last elements of an array and create a new array</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Test
+            {
+                public static void main(String args[])
+                {
+                    int a1[] = new int[4];
+            
+                    int a2[] = new int[4];
+            
+                    int n = 0;  // default number
+            
+                    // asign index value
+            
+                    a1[0] = 3;
+                    a1[1] = 6;
+                    a1[2] = 9;
+                    a1[3] = 0;
+            
+                    for(int i : a1) System.out.println(i);  // before traversal
+            
+                    // set array 2 value against array 1
+                    
+                    for (int i = 0; i < a1.length; i++) a2[i] = a1[i];  
+            
+                    // swap array first or last index
+            
+                    n = a2[0];
+            
+                    a2[0] = a2[a2.length - 1];
+                    
+                    a2[a2.length - 1] = n;
+            
+                    for(int i : a2) System.out.println(i);  // after traversal
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc21.png" height="100" width="430">
+    </div><br>
+
+    <h3>21.Write a Java program to count the number of even and odd elements in a given array</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class evenodd
+            {
+            public static void main(String a[])
+            {
+            int i,ecount=0,ocount=0;
+            int[] arr = {5, 7, 2, 4, 9};
+            for(i=0;i<5;i++)
+            {
+                if(arr[i]%2==0)
+                {
+                    ecount++;
+                }
+                else{
+                    ocount++;
+                }
+            }
+            System.out.println("Given Array: ");
+            for(i=0;i<5;i++)
+            {
+                System.out.println(arr[i]);
+            }
+            
+            System.out.println("No. of even numbers in array: "+ecount);
+            System.out.println("No. of odd number in  array: "+ocount);
+            }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7062bpc22.png" height="100" width="430">
+    </div><br>
+
+    <h3>22. Write a Java program to compute the square root of an given integer</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+                    int n = 2;
+            
+                    System.out.println(" square root is "+(n * n));  // check value
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc23.png" height="100" width="430">
+    </div><br>
+
+    <h3>23. Write a Java program to check if a positive number is a palindrome or not</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>import java.io.*;
+            class palindrome
+            {
+            public static void main(String a[]) throws IOException
+            {
+            int num,temp,sum=0,r;
+            System.out.println("Enter any number:");
+            BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+            num = Integer.parseInt(br.readLine());
+            temp=num;
+            if(num>0)
+            {
+            while(num>0)
+            {    
+            r=num%10;  
+            sum=(sum*10)+r;    
+            num=num/10;    
+            }    
+            if(temp==sum)    
+            {
+            System.out.println(temp+" is palindrome number... ");    
+            }
+            else    
+            {  
+            System.out.println(temp+ " is not palindrome number...");    
+            }  
+            }
+            else
+            {
+                System.out.println("Enter any positive number.");
+            }
+                
+            }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7062bpc24.png" height="100" width="430">
+    </div><br>
+
+    <h3>24.Write a Java program to add all the digits of a given positive integer</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class sum
+            {
+                public static void main(String st[])
+                {
+                    int num=12345,sum=0,temp;
+                    temp=num;
+                    while(num!=0)
+                        {
+                            sum=sum+num%10;
+                            num=num/10;
+                        }
+                        System.out.println("Sum of all digits  in the "+temp+" is "+sum);
+                      
+            
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7062bpc30.png" height="100" width="430">
+    </div><br>
+
+    <h3>25.Java program to find area of circle</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+                    System.out.print(" enter radius of circle  = ");
+            
+                    float radius = new java.util.Scanner(System.in).nextFloat();
+            
+                    /* area of circle is [ pi * radius square]*/ 
+            
+                    System.out.println("area of circle is "+(3.14 * radius * radius));
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7062bpc26.png" height="100" width="430">
+    </div><br>
+
+    <h3>26.Java Program to find area of rectangle</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.Scanner;
+            class a
+            {
+                public static void main (String x[])
+                {
+                   Scanner l=new Scanner(System.in);
+                   Scanner b=new Scanner(System.in);
+                   // inpu length and breadth by user
+                   System.out.println("To calculate the area of rectangle:");
+                   System.out.print("Enter  length: ");
+                   float length=l.nextFloat();
+                   System.out.print("Enter breadth: ");
+                   float breadth=b.nextFloat();
+            
+                   float area;
+                   area=2*length+2*breadth;
+                   System.out.println("Area of Rectangle:"+area);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc27.png" height="100" width="430">
+    </div><br>
+
+    <h3>27.Java Program to find area of triangle</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+                    java.util.Scanner input = new java.util.Scanner(System.in);
+                    
+                    System.out.print(" enter base  = ");
+            
+                    float b = input.nextFloat(); 
+                    
+                    System.out.print(" enter height  = ");
+            
+                    float h = input.nextFloat(); 
+            
+                    /* area of triangle is [base * hegiht / 2]*/ 
+            
+                    System.out.println("area of triangle is "+((b * h) / 2));
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7039BPC_28.png" height="100" width="430">
+    </div><br>
+
+    <h3>28.Java Program to find area of equilateral triangle</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.Scanner;
+            class area
+            {
+                public static void main(String st[])
+                {
+                  Scanner s=new Scanner(System.in);
+                  System.out.println("Enter the side of the triangle: ");
+                   double side =s.nextDouble();
+                    double ar= java.lang.Math.sqrt(3)/4*side*side;
+                    System.out.println("Area of the triangle is "+ ar);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="bpc29.png" height="100" width="430">
+    </div><br>
+
+    <h3>29.Java Program to find area of rhombus</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>  import java.util.*;
+            import java.io.*;
+            public class p2{
+            
+                static public void main(String arg[]){
+                    Scanner obj = new Scanner(System.in);
+                    System.out.println("Enter value of base : ");
+                    int b = obj.nextInt();
+                    System.out.println("Enter value of height : ");
+                    int h = obj.nextInt();
+                    int res = (b * h);
+                    System.out.println("Area of Parallelogram : "+res);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7062bpc30.png" height="100" width="430">
+    </div><br>
+
+    <h3>30.Java Program to find area of parallelogram</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Test
+            {
+                public static void main(String args[])
+                {
+                    java.util.Scanner input = new java.util.Scanner(System.in);
+            
+                    System.out.println("Enter the base:");
+            
+                    double b = input.nextDouble();
+                    
+                    System.out.println("Enter the height:");
+                    
+                    double h = input.nextDouble();
+            
+                    /* area of parallelogram is [ base * height ] */
+                    
+                    System.out.println("Area of Parallelogram is: "+(b * h));
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7092bpc32.png" height="100" width="430">
+    </div><br>
+
+    <h3>31.Java Program to find volume of sphere</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.*;
+            import java.io.*;
+            public class p4{
+            
+                static public void main(String arg[]){
+                    Scanner obj = new Scanner(System.in);
+                    System.out.println("Enter value of radius : ");
+                    int r = obj.nextInt();
+                    int res = (4/3)* 3.14 * r * r * r;
+                    System.out.println("Volume of Sphere : "+res);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="program34.png" height="100" width="430">
+    </div><br>
+
+    <h3>32.Java Program to find volume of cylinder</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.*;
+            import java.io.*;
+            public class p5{
+            
+                static public void main(String arg[]){
+                    Scanner obj = new Scanner(System.in);
+                    System.out.println("Enter value of radius : ");
+                    int r = obj.nextInt();
+                    System.out.println("Enter value of height : ");
+                    int h = obj.nextInt();
+                    int res = 3.14 * h * r * r;
+                    System.out.println("Volume of Cylinder : "+res);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7024bpc101.png" height="100" width="430">
+    </div><br>
+
+    <h3>33.Java Program to find volume of cuboid</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Test
+            {
+                public static void main(String args[])
+                {
+                    double l = 2;
+            
+                    double b = 3;
+            
+                    double h = 2;
+            
+                    System.out.println("Volume Of Cuboid is:"+(l * b * h));
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="program36.png" height="100" width="430">
+    </div><br>
+
+    <h3>34.Java Program to find volume of cone</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Test
+            {
+                public static void main(String args[])
+                {
+                    double r = 3;
+            
+                    double h = 5;
+            
+                    System.out.println("Volume Of Cone is: "+((22 * r * r * h) / (3 * 7)));
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="program37.png" height="100" width="430">
+    </div><br>
+
+    <h3>35.Java program to find surface area of cuboid</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class cuboid_Sarea   
+            {    
+            public static void main (String args[])   
+             {   float  l, w, h, s_area;       
+                 l = 10;  
+                 w =20;  
+                 h = 30;  
+                s_area  = 2*( l *w  + w* h + h*l);  
+                 System.out.println ("Surface Area of Cuboid is: "); 
+                   System.out.println(s_area);   
+               
+            }}  </pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7083bpc38.png" height="100" width="430">
+    </div><br>
+
+    <h3>36.Java program to find surface area of cylinder</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class cylinder_Sarea
+            {  
+             public static void main(String args[])  
+            {  
+             float r, h, s_area;  
+              r = 10;  
+              h  = 20;  
+              s_area = (22*r*(r+h))/7;  
+              System.out.println("Surface Area of Cylinder is: "+s_area);  
+            }  
+            } </pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7083bpc39.png" height="100" width="430">
+    </div><br>
+
+    <h3>37.Java program to find surface area of cube</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.Scanner;
+            class a
+            {
+                public static void main (String x[])
+                {
+                 Scanner s=new Scanner(System.in);
+                System.out.println("To calculate surface area of cube:");
+                System.out.println("Enter the side of cube: ");
+                // input value
+                 float side=s.nextFloat();
+                 float area;
+                 area=6*side*side;
+                 System.out.println("Surface area of cube:"+area);
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7039BPC_40.png" height="100" width="430">
+    </div><br>
+
+    <h3>38.Java program to calculate average marks</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class basic_programming_constructs_41
+            {
+               public static void main(String args[])
+               {
+                   // Declaring avriables..
+                    int mark[] = new int[5],i;
+                    float sum=0,avg; 
+                   // Taking values from user...
+                    Scanner scan = new Scanner(System.in);
+                    System.out.print("Enter marks for 5 Subjects : ");
+                    for(i=0; i<5; i++)
+                    {
+                        mark[i] = scan.nextInt();
+                    // calculating sum
+                        sum = sum + mark[i];
+                    }
+                    // Finding avergae..
+                     avg= sum/5;
+             
+                    /// Printing the result...
+                System.out.print("Average Marks = " +avg);
+                }
+            }
+        </pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7024bpc41.png" height="100" width="430">
+    </div><br>
+
+    <h3>39.Java program to find factorial of any number</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class Bpc44{
+            int fact(int x){
+                if(x==0){
+                    return 1;
+                }
+                 return x*(fact(x-1));
+            }
+        }
+        
+        class b{
+            public static void main(String str[]){
+            Bpc44 obj=new Bpc44();
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter the Number : ");
+            int a=sc.nextInt();
+            System.out.println("Factorial of the Number is : "+ obj.fact(a));
+        }
+        }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7074bpc44.png" height="100" width="430">
+    </div><br>
+
+    <h3>40.Java Program To Calculate CGPA Percentage</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>class basic_programming_constructs_46 {
+            public static void main(String[] args) throws java.io.IOException {
+                java.io.BufferedReader input = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+        
+                try {
+                    System.out.print("Enter the total number of subjects: ");
+                    int totalSubjects = Integer.parseInt(input.readLine());
+        
+                    if (totalSubjects <= 0) {
+                        System.out.println("Please enter a valid number of subjects.");
+                    } else {
+                        double totalCredits = 0;
+                        double totalGradePoints = 0;
+        
+                        for (int i = 1; i <= totalSubjects; i++) {
+                            System.out.print("Enter the credits for subject " + i + ": ");
+                            double credits = Double.parseDouble(input.readLine());
+                            System.out.print("Enter the grade points for subject " + i + ": ");
+                            double gradePoints = Double.parseDouble(input.readLine());
+        
+                            totalCredits += credits;
+                            totalGradePoints += (credits * gradePoints);
+                        }
+        
+                        double cgpa = totalGradePoints / totalCredits;
+                        double percentage = cgpa * 9.5;
+        
+                        System.out.println("CGPA: " + cgpa);
+                        System.out.println("Percentage: " + percentage + "%");
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input. Please enter valid numeric values.");
+                } catch (Exception e) {
+                    System.out.println("Something went wrong.");
+                }
+            }
+        }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7041bpc46.png" height="100" width="430">
+    </div><br>
+
+    <h3>41.Java Program To Calculate Batting Average</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class Strings_48
+            {
+                public static void main(String args[])
+                {
+                    String inputStr ="prepinsta";
+                    boolean flag = true;
+            
+                    for(char i :inputStr.toCharArray())
+                    {
+                        // if current character is the last occurrence in the string
+                        if (inputStr.indexOf(i) == inputStr.lastIndexOf(i))
+                        {
+                            System.out.println("First non-repeating character is: "+ i);
+                            flag = false;
+                            break;
+                        }
+                    }
+            
+                    if(flag)
+                        System.out.println("There is no non repeating character in input string");
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7095bpc48.png" height="100" width="430">
+    </div><br>
+
+    <h3>42. Java Program to calculate electricity bill</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.Scanner;
+            class electricBill{
+                void CalcBill(){
+                    System.out.println("Program to calculate Electricity Bill");
+                    Scanner scan = new Scanner(System.in);
+                    double rate, unit, total;
+                    System.out.print("Enter the rate per unit (in rupees) : ");
+                    rate = scan.nextInt();
+                    System.out.print("Enter the number of units consumed : ");
+                    unit = scan.nextInt();
+                    total = rate * unit;
+                    System.out.println("Total Electricity Bill is : " + total);
+                }
+                public static void main(String args[]){
+                    electricBill obj = new electricBill();
+                    obj.CalcBill();
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7020BPC_45.png" height="100" width="430">
+    </div><br>
+
+    <h3>43.Write a Java program to segregate all 0s on left side and all 1s on right side of a given array of 0s and 1s</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>  class ninty_seven{
+            static void display(int[] arr){
+                for(int i: arr)
+                    System.out.print(i + " ");
+                System.out.println();
+            }
+            public static void main(String[] args){
+                int  zero = 0;
+                int[] arr = {0,1,1,1,0,0,1,0,0,1};
+                System.out.print("Array before separation : ");
+                display(arr);
+                for(int i: arr){
+                    if(i==0) zero++;
+                }
+                for(int i=0; i0){
+                        arr[i] = 0;
+                        zero--;
+                    }
+                    else arr[i] = 1;
+                }
+                System.out.print("Array after separation : ");
+                display(arr);
+            }
+        </pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7001bpc97.png" height="100" width="430">
+    </div><br>
+
+    <h3>44.Write a Java program to print Fibonacci series of n terms where n is input by user using loop</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class oneHundredEighteen {
+            public static void main(String[] args) throws java.io.IOException {
+                int num = 0, first = 0, second = 1, next = 0;
+                java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+                System.out.print("Enter a number: ");
+                try {
+                    num = java.lang.Integer.parseInt(reader.readLine());
+                    System.out.println("Fibonnaci series of " + num + " terms is ");
+                    for (int i = 1; i <= num; i++) {
+                        if(i==1) System.out.print(first + " ");
+                        else if(i==2) System.out.print(second + " ");
+                        else{
+                            next = first + second;
+                            System.out.print(next + " ");
+                            first = second;
+                            second = next;
+                        }
+                    }
+                    System.out.println();
+                } catch (java.lang.NumberFormatException e) {
+                    System.out.println("Invalid input. Please enter a valid number.");
+                }
+            }
+        }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7001bpc118.png" height="100" width="430">
+    </div><br>
+
+    <h3>45.Write a Java method to find factorial using recursion in java</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> class oneHundredThirtyTwo {
+            private static java.util.HashMap track = new java.util.HashMap();
+        
+            static long fact(int n){
+                if(track.containsKey(n)) return track.get(n);
+                long result =  n*fact(n-1);
+                track.put(n, result);
+                return result;
+            }
+            public static void main(String[] args) throws java.io.IOException {
+                int num = 0;
+                track.put(0, (long)1);
+                track.put(1, (long)1);
+                java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+                System.out.print("Enter a number: ");
+                try {
+                    num = java.lang.Integer.parseInt(reader.readLine());
+                    long ans = fact(num);
+                    System.out.println("Factorial of " + num + " is " + ans);
+                } catch (java.lang.NumberFormatException e) {
+                    System.out.println("Invalid input. Please enter a valid number.");
+                }
+            }
+        }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7001bpc132.png" height="100" width="430">
+    </div><br>
+
+    <h3>46.Write a Java program to find second lowest number from the array</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>  class lowest
+            {
+                lowest()
+                {
+                    System.out.println("\nObject is created");
+                }
+                public static void main(String brr[])
+                {
+                    java.util.Scanner s1= new java.util.Scanner(System.in);
+                    int first,second,i,index=-1;
+                    int arr[]=new int[5];
+                    for(i=0;i<(arr.length);i++)
+                    {
+                        System.out.print("\nEnter the "+(i+1)+" integer number :- ");
+                        arr[i]=s1.nextInt();
+                    }
+                    first=arr[0];
+                    second=arr[0];
+                    for(i=1;i<(arr.length);i++)
+                    {	
+                        if(first>arr[i])
+                        {
+                            second=first;
+                            index=i;
+                            first=arr[i];
+                        }
+                    }
+                    i=index+1;
+                    for(;i<(arr.length);i++)
+                    {
+                        if(second>arr[i])
+                        {
+                            second=arr[i];
+                        }			
+                    }
+                    System.out.print("\nthe first lowest number will be :- "+first);
+                    System.out.print("\nthe second lowest number will be "+second);
+                    
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7004bpc94.png" height="100" width="430">
+    </div><br>
+
+    <h3>47.Write a Java program to print out all Armstrong numbers between 1 to 600 using loop</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre>  class a1
+            {
+                a1()
+                {
+                    System.out.println("\nObject is created");
+                }
+                public static void main(String brr[])
+                {
+                    int count=0,totalsum=0,sumcube=1,demo,cube,number;
+                    for(int j=1;j<=600;j++)
+                    {
+                        number=j;
+                        demo=number;
+                        while(demo>0)
+                        {
+                            count++;
+                            demo=demo/10;
+                        }
+                        demo=number;
+                        while(demo>0)
+                        {
+                            cube=demo%10;
+                            for(int i=1;i<=count;i++)
+                            {
+                                sumcube=sumcube*cube;
+                            } 
+                            totalsum=totalsum+sumcube;
+                            demo=demo/10;
+                            sumcube=1;
+                        }
+                        if(number==totalsum)
+                        {
+                            System.out.print("\nthe "+number+" will be armstrom number ");
+                        }
+                            totalsum=0;
+                            count=0;
+                    }
+                
+                }
+                    
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7004bpc116.png" height="100" width="430">
+    </div><br>
+
+    <h3>48.Write a Java method to check numbers is palindrome number or not</h3>
+
+    <div class="column">
+        <h3>CODE :- </h3>
+        <pre> import java.util.Scanner;
+            class electricBill{
+                void CalcBill(){
+                    System.out.println("Program to calculate Electricity Bill");
+                    Scanner scan = new Scanner(System.in);
+                    double rate, unit, total;
+                    System.out.print("Enter the rate per unit (in rupees) : ");
+                    rate = scan.nextInt();
+                    System.out.print("Enter the number of units consumed : ");
+                    unit = scan.nextInt();
+                    total = rate * unit;
+                    System.out.println("Total Electricity Bill is : " + total);
+                }
+                public static void main(String args[]){
+                    electricBill obj = new electricBill();
+                    obj.CalcBill();
+                }
+            }</pre>
+        <h3> OUTPUT :- </h3>
+        <img src="7004bpc129.png" height="100" width="430">
+    </div><br>
+   
+    <h3>49.Write a Java method to find GCD and LCM of Two Numbers </h3>
+    <div class="column">
+        <h3>CODE :- </h3>
+          
+    <pre>
+        class a
+        {
+            public static void hcf(int a ,int b )
+            {
+                int i;
+                i=a>b?a:b;
+                for(;i>0;--i)
+                {
+                    if(a%i==0&&b%i==0)
+                    {
+                        System.out.print("\nthe hcf of "+a+" and "+b+" is :- "+i);
+                            break;
+                    }
+                }
+                
+            }
+            public static void lcm(int a,int b)
+            {
+                int i;
+                for(i=(a<b?b:a);i<=(a*b);i=i+(a<b?b:a))
+                {
+                    if(i%a==0&&i%b==0)
+                    {
+                     break;
+                    }
+                }
+                if(i%a==0&&i%b==0)
+                {
+                    System.out.print("\nthe lcm of "+a+" and "+b+" is :- "+i);
+                }
+            }
+            public static void main(String arr[])
+            {
+                int x,y;	
+                java.util.Scanner s1=new java.util.Scanner(System.in);
+                System.out.print("\nEnter 1st number :- ");
+                x=s1.nextInt();
+                System.out.print("\nEnter 2nd number :- ");
+                y=s1.nextInt();
+                hcf(x,y);
+                lcm(x,y);
+            }
+        }     
+    </pre>
+    </div>
+    <h3> OUTPUT :- </h3>
+    <img src="7004bpc134.png" height="100" width="430">
+</div><br>
+
+<h3>50.Write a Java program to round a float number to specified decimals </h3>
+    <div class="column">
+    <pre>
+        class a 
+        {
+        
+            public static float roundFloat(float number, int decimalPlaces)
+         {
+                float factor = (float) Math.pow(10, decimalPlaces);
+                number = number * factor;
+                number = Math.round(number);
+                number = number / factor;
+                return number;
+          }
+        
+            public static void main(String[] args) 
+            {
+                float original;
+                int decimalPlaces;
+            java.util.Scanner s1=new java.util.Scanner(System.in);
+            System.out.print("Enter the float number :- ");
+            original=s1.nextFloat();
+            System.out.print("Enter the round decimal number :- ");
+            decimalPlaces=s1.nextInt();
+                float roundedNumber = roundFloat(original, decimalPlaces);
+                System.out.println("Original number: " + original);
+                System.out.println("Rounded number to " + decimalPlaces + " decimal places: " + roundedNumber);
+            }
+        }
+    </pre>
+    </div>
+        <h3>Output</h3>
+            <img src="7004bpc134.png" height="100" width="430">
+    </div>
+
+    <section id="programs">
+        <h2>JAVA PROGRAMMING CONSISTS OF : </h2>
+        <div class="hyperlink-buttons">
+            <div class="column">
+                <a href="2darray.html">2D ARRAYS </a> <br>
+                <a href="basicprogrammingcontructs.html">BASIC PROGRAMMING CONSTRUCTS</a>
+                <a href="exceptionhandling.html"> EXCEPTION HANDLING</a>
+                <a href="multithreading.html"> MULTITHREADING</a>
+            </div>
+
+            <div class="column">
+                <a href="functions.html">FUNCTIONS</a>
+                <a href="awt.html">GRAPHICAL USER INTERFACE (AWT)</a>
+                <a href="inheritance.html">INHERITANCE</a> <br>
+                <a href="inputoutput.html"> INPUT/OUTPUT</a> <br>
+
+            </div>
+            <div class="column">
+                <a href="oop.html">OBJECT ORIENTED PROGRAMMING</a>
+                <a href="packages.html">PACKAGES</a>
+                <a href="singledimension.html"> SINGLE DIMENSION ARRAYS</a> <br>
+                <a href="strings.html"> STRINGS</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <pre align="center">ALL RIGHTS RESERVED @7051_dilpreetsingh</pre>
+        <div class="footer-buttons">
+
+            <a href="index.html">HOME</a>
+            <a href="contactpage.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#top">TOP OF PAGE</a>
+        </div>
+    </footer>
+</body>
+
+</html>
